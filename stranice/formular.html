@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal - Rezervacija</title>
+    <link rel="icon" type="favicon" href="../podaci/logo/LOGOplavi.png" />
+  </head>
+  <body>
+    <img src="../podaci/logo/LOGO.svg" alt="logo" height="100" />
+    <ul>
+      <a href="../index.html">Pocetna</a>
+      <a href="../stranice/O nama.html">O nama</a>
+      <a href="../stranice/iznajmljivanje.html">Katalog</a>
+      <a href="../stranice/cene.html">Cenovnik</a>
+      <a href="#">Rezervacija</a>
+      <a href="../stranice/kontakt.html">Kontakt</a>
+    </ul>
+    <hr />
+
+    <form action="formular">
+      <label for="ime">Ime:</label>
+      <input
+        type="text"
+        name="ime"
+        id="ime"
+        placeholder="Upisite vase ime."
+      /><br />
+
+      <label for="prezime">Prezime:</label>
+      <input
+        type="text"
+        name="prezime"
+        id="prezime"
+        placeholder="Upisite vase prezime."
+        ><br/>
+    
+
+      <label for="broj">Broj telefana:</label>
+      <input
+        type="tel"
+        name="telefon"
+        id="telefon"
+        placeholder="Upisite Vas broj."
+      /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Upisite vas email."
+      />
+      <br />
+
+      <label for="vozacka">Broj vozacke dozvole:</label> 
+      <input
+        type="number"
+        name="vozacka"
+        id="vozacka"
+        min="0"
+        placeholder="Unesite vas broj vozacke."
+      /><br />
+      <br />
+      <br />
+
+      <label for="vozila">Izaberite vozilo za iznajmljivanje:</label> <br />
+      <select name="opcijavozila" id="vozila">
+        <option value="disabled" disabled selected>Izaberite auto.</option>
+        <option value="evo">Mitsubishi Lancer Evo X</option>
+        <option value="corolla">Toyota Corolla</option>
+        <option value="Skoda Fabia">Skoda Fabia</option>
+        <option value="Hyundai I30">Hyundai I30</option>
+        <option value="Tesla Y">Tesla Y</option>
+        <option value="Fiat Tipo">Fiat Tipo</option>
+      </select>
+      <br />
+      <br />
+      <label for="DatumRentiranja">Datum rentiranja vozila:</label> <br />
+      <label for="">Od <input type="date" name="datumrodj" id="datumrodj" /> do <input type="date" name="datumrodj" id="datumrodj" /></label>
+      <br />
+      <br />
+
+      
+      <label for="dodatnaoprema">Dodatna oprema: 
+      <input type="checkbox" name="punrez" id="punrez" checked />Pun rezervoar
+      <input type="checkbox" /> Lanci za gume <input type="checkbox" /> Punjac za telefon <br />
+      </label>
+      <br />
+
+
+      <label for="poruka">Dodatna napomena:</label> <br />
+      <textarea
+        name="poruka"
+        id="poruka"
+        cols="30"
+        rows="10"
+        placeholder="Ostavite napomenu ovde."
+      ></textarea>
+      <br />
+      
+      <br />
+      <button type="submit">Potvrdi rezervaciju.</button>
+    </form>
+
+   
